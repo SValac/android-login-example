@@ -1,6 +1,5 @@
-package com.example.jetpackcomposeinstagram.login
+package com.example.jetpackcomposeinstagram.login.ui
 
-import android.util.Patterns
 import android.widget.Toast
 import androidx.activity.compose.LocalActivity
 import androidx.compose.foundation.Image
@@ -169,7 +168,7 @@ fun LoginDivider() {
 
 @Composable
 fun LoginButton(isEnable: Boolean) {
-    var activity = LocalActivity.current
+    val activity = LocalActivity.current
     Button(
         onClick = { Toast.makeText(activity, "Loggin clieckd", Toast.LENGTH_LONG).show() },
         enabled = isEnable,
