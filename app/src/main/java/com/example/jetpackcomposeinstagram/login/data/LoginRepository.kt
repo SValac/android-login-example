@@ -5,7 +5,7 @@ import com.example.jetpackcomposeinstagram.login.data.network.LoginService
 class LoginRepository {
     private val api = LoginService()
 
-    suspend fun  performLogin(user:String, password: String){
-        api.performLogin(user, password)
+    suspend fun  performLogin(user:String, password: String) : Boolean{
+        return api.performLogin(user, password)
     }
 }
