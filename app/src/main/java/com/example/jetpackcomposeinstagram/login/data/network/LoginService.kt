@@ -9,7 +9,7 @@ class LoginService {
 
     suspend fun performLogin(user: String, password: String): Boolean{
         return withContext(Dispatchers.IO) {
-            val response = retrofit.create(LoginClient::class.java).performLogin(user, password)
+            val response = retrofit.create(LoginClient::class.java).performLogin()
             response.body()?.success ?: false
         }
     }

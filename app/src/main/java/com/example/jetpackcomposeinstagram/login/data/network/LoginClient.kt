@@ -5,6 +5,6 @@ import retrofit2.Response
 import retrofit2.http.GET
 
 interface LoginClient {
-    @GET("/v3/f78c9d33-28b1-4f81-9cf1-6d6ff78fa014")
-    suspend fun performLogin(user: String, password: String): Response<LoginResponse>
+    @GET("/v3/e64bed32-852b-4e49-8921-f952a2c3ebcc")
+    suspend fun performLogin(): Response<LoginResponse>
 }
